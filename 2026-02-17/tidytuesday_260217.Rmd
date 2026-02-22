@@ -16,12 +16,13 @@ Packages used for visualization:
 - `ggthemes`
 - `scales`
 
+[View the complete R code here](https://github.com/more-mm/tidytuesday/blob/main/2026-02-17/stats_NZ.R) 
 
 >This week we are exploring [agriculture production statistics in New Zealand](https://figure.nz/table/TSQ8lkuKnyzfERF3) using data compiled from 
 from [StatsNZ](https://datainfoplus.stats.govt.nz/item/nz.govt.stats/eb7208cf-2f0f-416a-bd77-2fdbb9043255?_ga=2.264735308.2106648024.1715287902-1399521469.1678132138). 
 
 
-Let's glance the data.
+Let's glance at the data.
 ```{r import}
 dataset <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2026/2026-02-17/dataset.csv')
 knitr::kable(head(dataset))
@@ -35,14 +36,18 @@ knitr::kable(head(dataset))
 
 >Is sheep production unique in its decline? Do other types of meat production show the same pattern?
 
-![](figure1.png)
+Horse, beef cattle, deer, and pig production have all shown consistently decreasing values over the last few decades, mirroring the downward trend seen in sheep.
+
+![Production values were normalized within each category to visualize trends regardless of the absolute values.](figure1.png)
 
 
 
 
 >Which agricultural industries have shown the most production growth?
 
-![](figure2.png)
+To answer this question, we computed the Compound Annual Growth Rate (CAGR). This metric represents the steady, constant rate at which a value would have grown if it had increased evenly each year, allowing us to summarize the long-term growth trend of each production category into a single, comparable statistic. CAGR is calculated as  $$CAGR=\left(\frac{End\_Value}{Start\_Value}\right)^{\frac{1}{n}}-1$$ where $n$ is the number of years spanned from the beginning of the production.
+
+![Initial production values were subtracted from all the data to obtain a baseline for each production category.](figure2.png)
 
 
 
