@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.3.2",
+  "metadata": {
+    "appmode": "static",
+    "primary_rmd": null,
+    "primary_html": "2026-02-17/tidytuesday_260217.Rmd",
+    "content_category": null,
+    "has_parameters": false
+  },
+  "packages": null,
+  "files": {
+    ".gitattributes": {
+      "checksum": "05bdb783ee6514c8c072e47680af8ff7"
+    },
+    "2026-02-17/dataset.csv": {
+      "checksum": "1052ec4f39612a28e63de16ee3fa2ffd"
+    },
+    "2026-02-17/figure1.png": {
+      "checksum": "9227f5d4d3066a08d6ac285a79c52189"
+    },
+    "2026-02-17/figure2.png": {
+      "checksum": "63cc660b9868e92889ee00a674a88ec6"
+    },
+    "2026-02-17/stats_NZ.R": {
+      "checksum": "2313b3b34f1f3349f23a4b214f43bef6"
+    },
+    "2026-02-17/tidytuesday_260217.html": {
+      "checksum": "e4d2898c2c68d7a75986741a3a1857dc"
+    },
+    "2026-02-17/tidytuesday_260217.Rmd": {
+      "checksum": "64d4fc26beb3182fb57a8b0bd3223adf"
+    },
+    "README.md": {
+      "checksum": "17a4cb08e1bcc602afa970c0f4cb6256"
+    }
+  },
+  "users": null
+}
